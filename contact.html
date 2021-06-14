@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="Registration.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+     <div id="header"></div>
+
+    <div class="container">
+        <div class="title"> Contact
+
+        </div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Contact - Type</span>
+                    <select name="state" id="state">
+                        <option value="HR">HR</option>
+                        <option value="Finance">Finanace</option>
+
+                    </select>
+
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Name</span>
+                    <input type="text" placeholder="Enter your Name" name="lName" id="lName" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Email Id </span>
+                    <input type="text" placeholder="Enter your Mail Id" name="eMail" id="eMail" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number </span>
+                    <input type="number" placeholder="Enter your number" name="num" id="num" required>
+                </div>
+
+
+                <div class="input-box">
+                    <span class="details">Reason</span>
+                    <textarea placeholder="Enter Reason for contact" name="add" id="add"></textarea>
+                </div>
+                <br> </br>
+                <br></br>
+                <div class="button">
+                    <input type="submit" value="Register">
+
+                </div>
+
+                <div class="button">
+                    <input type="submit" value="Reset">
+
+                </div>
+
+                <div class="button">
+                    <input type="submit" value="cancle">
+
+                </div>
+
+
+            </div>
+        </form>
+    </div>
+
+    <div id="footer"></div>
+
+
+<div id='footer'></div>
+
+
+
+ 
+</body>
+
+</html>
